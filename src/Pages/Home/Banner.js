@@ -2,15 +2,7 @@ import React from "react";
 import bg from "../../assets/images/bg.png";
 import chair from "../../assets/images/chair.png";
 const Banner = () => {
-  const buttonStyle = {
-    background: "linear-gradient(90deg, #19D3AE -22.5%, #0FCFEC 120.83%)",
-    color: "white", 
-    fontWeight: "bold"
-
-  }
   const bannerStyle = {
-    paddingRight: "3%",
-    paddingLeft: "3%",
     paddingBottom: "5%",
     backgroundImage: `url(${bg})`,
     backgroundSize: "100%",
@@ -26,7 +18,7 @@ const Banner = () => {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <button class="btn btn-primary" style={buttonStyle}>Get Started</button>
+          <button class="btn btn-primary bg-gradient-to-r from-primary to-secondary text-white font-bold" >Get Started</button>
         </div>
       </div>
     </div>
