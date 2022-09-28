@@ -2,11 +2,11 @@ import React from 'react';
 
 const InfoCard = ({clockImage, cardStyle1, title, body}) => {
     return (
-        <div class="card lg:card-side bg-base-100 shadow-xl" style={cardStyle1}>
+        <div className="card lg:card-side bg-base-100 shadow-xl" style={cardStyle1}>
         <figure>
             <img src={clockImage} alt="Album"/></figure>
-        <div class="card-body">
-            <h2 class="card-title">{title}</h2>
+        <div className="card-body">
+            <h2 className="card-title">{title}</h2>
             <p>{body}</p>
         </div>
         </div>

@@ -36,7 +36,7 @@ const Services = () => {
                 {
                     services.map(service => 
                         <ServiceCard 
-                            key={service.id}
+                            key={service._id}
                             service={service}
                             > 
                         </ServiceCard>
