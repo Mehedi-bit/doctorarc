@@ -1,6 +1,8 @@
 import React from 'react';
 import footer from '../../assets/images/footer.png';
 
+let currentTime = new Date();
+
 const Footer = () => {
     const footerStyle = {
         background: `url(${footer}) no-repeat center`,
@@ -11,7 +13,7 @@ const Footer = () => {
     }
     return (
         <footer style={footerStyle} className="p-10">
-            <div className="footer">
+            <div className="footer grid-cols-2 md:grid-cols-3 justify-items-center items-center">
                 <div>
                     <span className="footer-title">Services</span> 
                     <a className="link link-hover">Branding</a>
@@ -34,7 +36,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="pt-10 text-center">
-                <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p>
+                <p>Copyright © {currentTime.getFullYear()} - All right reserved</p>
             </div>
 </footer>
     );
