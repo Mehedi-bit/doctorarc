@@ -5,7 +5,7 @@ import 'react-day-picker/dist/style.css';
 import chair from '../../assets/images/chair.png';
 
 const AppointmentCard = ({date, setDate}) => {
-    // const [date, setDate] = useState(new Date())
+
     return (
         <div className="hero min-h-screen">
             <div className="hero-content flex-col lg:flex-row-reverse  gap-32">

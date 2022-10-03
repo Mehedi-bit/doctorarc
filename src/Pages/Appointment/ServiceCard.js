@@ -13,7 +13,7 @@ const ServiceCard = ({service}) => {
                 </p>
                 <p>{slots.length} {slots.length? 'slots' : 'slot'} available</p>
                 <div className="card-actions pt-6">
-                    <button disabled={slots.length===0} className={slots.length?"btn btn-primary bg-gradient-to-r from-primary to-secondary text-white font-bold":"btn btn-primary"}>Book appartment</button>
+                    <button disabled={slots.length===0} className="btn btn-secondary text-white">Book appartment</button>
                 </div>
             </div>
         </div>
