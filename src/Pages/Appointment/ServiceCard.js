@@ -21,5 +21,4 @@ const ServiceCard = ({service, setTreatment}) => {
         </div>
     );
 };
-// export 
 export default ServiceCard;
