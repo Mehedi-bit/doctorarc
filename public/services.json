@@ -8,7 +8,18 @@
       "9.00 AM to 9.30 AM",
       "9.30 AM to 10.00 AM",
       "10.00 AM to 10.30 AM",
-      "10.30 AM to 11.00 AM"
+      "10.30 AM to 11.00 AM",
+      "11:00 AM to 11:30 AM",
+      "11.30 AM to 12.00 PM",
+      "12.00 PM to 12.30 PM",
+      "12.30 PM to 1.00 PM",
+      "1.00 PM to 1.30 PM",
+      "1.30 PM to 2.00 PM",
+      "2:00 PM to 2:30 PM",
+      "2.30 PM to 3.00 PM",
+      "3.00 PM to 3.30 PM",
+      "3.30 PM to 4.00 PM",
+      "4.00 PM to 4.30 PM"
     ]
   },
 
@@ -16,9 +27,23 @@
     "_id": 2,
     "name": "Cosmetic Dentistry",
     "slots": [
+      "8.00 AM to 8.30 AM",
+      "8.30 AM to 9.00 AM",
+      "9.00 AM to 9.30 AM",
       "9.30 AM to 10.00 AM",
       "10.00 AM to 10.30 AM",
-      "10.30 AM to 11.00 AM"
+      "10.30 AM to 11.00 AM",
+      "11:00 AM to 11:30 AM",
+      "11.30 AM to 12.00 AM",
+      "12.00 AM to 12.30 AM",
+      "12.30 AM to 1.00 AM",
+      "1.00 AM to 1.30 AM",
+      "1.30 AM to 2.00 AM",
+      "2:00 AM to 2:30 AM",
+      "2.30 AM to 3.00 AM",
+      "3.00 AM to 3.30 AM",
+      "3.30 AM to 4.00 AM",
+      "4.00 AM to 4.30 AM"
     ]
   },
 
@@ -26,11 +51,23 @@
     "_id": 3,
     "name": "Teeth Cleaning",
     "slots": [
+      "8.00 AM to 8.30 AM",
       "8.30 AM to 9.00 AM",
       "9.00 AM to 9.30 AM",
       "9.30 AM to 10.00 AM",
       "10.00 AM to 10.30 AM",
-      "10.30 AM to 11.00 AM"
+      "10.30 AM to 11.00 AM",
+      "11:00 AM to 11:30 AM",
+      "11.30 AM to 12.00 AM",
+      "12.00 AM to 12.30 AM",
+      "12.30 AM to 1.00 AM",
+      "1.00 AM to 1.30 AM",
+      "1.30 AM to 2.00 AM",
+      "2:00 AM to 2:30 AM",
+      "2.30 AM to 3.00 AM",
+      "3.00 AM to 3.30 AM",
+      "3.30 AM to 4.00 AM",
+      "4.00 AM to 4.30 AM"
     ]
   },
 
@@ -38,21 +75,71 @@
     "_id": 4,
     "name": "Cavity Protection",
     "slots": [
+      "8.00 AM to 8.30 AM",
+      "8.30 AM to 9.00 AM",
+      "9.00 AM to 9.30 AM",
       "9.30 AM to 10.00 AM",
       "10.00 AM to 10.30 AM",
-      "10.30 AM to 11.00 AM"
+      "10.30 AM to 11.00 AM",
+      "11:00 AM to 11:30 AM",
+      "11.30 AM to 12.00 AM",
+      "12.00 AM to 12.30 AM",
+      "12.30 AM to 1.00 AM",
+      "1.00 AM to 1.30 AM",
+      "1.30 AM to 2.00 AM",
+      "2:00 AM to 2:30 AM",
+      "2.30 AM to 3.00 AM",
+      "3.00 AM to 3.30 AM",
+      "3.30 AM to 4.00 AM",
+      "4.00 AM to 4.30 AM"
     ]
   },
 
   {
     "_id": 5,
     "name": "Pediatric Dental",
-    "slots": ["10.00 AM to 10.30 AM", "10.30 AM to 11.00 AM"]
+    "slots": [
+      "8.00 AM to 8.30 AM",
+      "8.30 AM to 9.00 AM",
+      "9.00 AM to 9.30 AM",
+      "9.30 AM to 10.00 AM",
+      "10.00 AM to 10.30 AM",
+      "10.30 AM to 11.00 AM",
+      "11:00 AM to 11:30 AM",
+      "11.30 AM to 12.00 AM",
+      "12.00 AM to 12.30 AM",
+      "12.30 AM to 1.00 AM",
+      "1.00 AM to 1.30 AM",
+      "1.30 AM to 2.00 AM",
+      "2:00 AM to 2:30 AM",
+      "2.30 AM to 3.00 AM",
+      "3.00 AM to 3.30 AM",
+      "3.30 AM to 4.00 AM",
+      "4.00 AM to 4.30 AM"
+    ]
   },
 
   {
     "_id": 6,
     "name": "Oral Surgery",
-    "slots": []
+    "slots": [
+      "8.00 AM to 8.30 AM",
+      "8.30 AM to 9.00 AM",
+      "9.00 AM to 9.30 AM",
+      "9.30 AM to 10.00 AM",
+      "10.00 AM to 10.30 AM",
+      "10.30 AM to 11.00 AM",
+      "11:00 AM to 11:30 AM",
+      "11.30 AM to 12.00 AM",
+      "12.00 AM to 12.30 AM",
+      "12.30 AM to 1.00 AM",
+      "1.00 AM to 1.30 AM",
+      "1.30 AM to 2.00 AM",
+      "2:00 AM to 2:30 AM",
+      "2.30 AM to 3.00 AM",
+      "3.00 AM to 3.30 AM",
+      "3.30 AM to 4.00 AM",
+      "4.00 AM to 4.30 AM"
+    ]
   }
 ]
