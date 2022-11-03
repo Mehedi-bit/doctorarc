@@ -38,12 +38,10 @@ const BookingModal = ({date, treatment, setTreatment}) => {
         .then(res => res.json())
         .then(data => {
             console.log(data);
-            
-
+            // close the modal
+            setTreatment(null);
         })
         
-        console.log(_id, name, slot, formattedDate, user.email, user.displayName);
-        setTreatment(null);
 
     }
 
