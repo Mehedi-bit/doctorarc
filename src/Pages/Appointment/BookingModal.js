@@ -1,18 +1,22 @@
 import { format } from 'date-fns';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
+
 
 
 const BookingModal = ({date, treatment, setTreatment}) => {
     const {_id, name, slots} = treatment;
     const [user, loading, error] = useAuthState(auth);
 
+    
+    const notify = () => toast("Wow so easy !");
 
     const handleBooking = (event) => {
         event.preventDefault();
         const slot = event.target.slot.value;
-        console.log(_id, slot);
+        // console.log("id is:--", _id, "slot is:--", slot);
         let formattedDate = format(date, 'PP')
         const booking = {
             treatmentId: _id,
@@ -29,15 +33,18 @@ const BookingModal = ({date, treatment, setTreatment}) => {
             headers: {
                 'content-type': 'application/json'
             }, 
-            body: JSON.stringify(booking)
+            body: JSON.stringify(booking)                  
         })
         .then(res => res.json())
         .then(data => {
+            console.log(data);
             
-        })
 
-        // close the modal
+        })
+        
+        console.log(_id, name, slot, formattedDate, user.email, user.displayName);
         setTreatment(null);
+
     }
 
     return (
@@ -58,7 +65,7 @@ const BookingModal = ({date, treatment, setTreatment}) => {
                     
                     <input type="text" name="name" disabled value={user?.displayName || ''} className="input input-bordered w-full max-w-xs" />
                     <input type="email" name="email" disabled value={user?.email} className="input input-bordered w-full max-w-xs" />
-                    <input type="text" name="phone  " placeholder="Phone number" className="input input-bordered w-full max-w-xs" />
+                    <input type="text" name="phone" placeholder="Phone number" className="input input-bordered w-full max-w-xs" />
                     <input type="submit" value="Submit" placeholder="Type here" className="input input-bordered w-full max-w-xs btn btn-secondary text-white" />
                 </form>
             </div>
