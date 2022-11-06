@@ -6,7 +6,7 @@ import auth from '../../firebase.init';
 
 
 
-const BookingModal = ({date, treatment, setTreatment}) => {
+const BookingModal = ({date, treatment, setTreatment, refetch}) => {
     const {_id, name, slots} = treatment;
     console.log(treatment);
     const [user, loading, error] = useAuthState(auth);
@@ -46,6 +46,7 @@ const BookingModal = ({date, treatment, setTreatment}) => {
                 toast.error(`You already have an existing appointment on ${data.booking?.date} at ${data.booking?.slot}`);
             }
             // close the modal
+            refetch();
             setTreatment(null);
         })
         
