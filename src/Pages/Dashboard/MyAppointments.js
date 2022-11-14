@@ -10,7 +10,12 @@ const MyAppointments = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/booking?patient=${user.email}`)
+            fetch(`http://localhost:5000/booking?patient=${user.email}`, {
+                method: 'GET',
+                headers : {
+                    'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+                }
+            })
             .then(res => res.json())
             .then(data => setAppointments(data));
         }
@@ -22,7 +27,6 @@ const MyAppointments = () => {
             <h2 className="text-xl">My Appointments: {appointments.length}</h2>
             <div className="overflow-x-auto">
                 <table className="table w-full">
-                    {/* <!-- head --> */}
                     <thead>
                     <tr>
                         <th></th>
