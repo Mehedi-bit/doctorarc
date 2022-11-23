@@ -5,8 +5,6 @@ import auth from '../../firebase.init';
 const MyAppointments = () => {
     const [appointments, setAppointments] = useState([]);
     const [user, loading, error] = useAuthState(auth);
-    
-    console.log('user is', user);
 
     useEffect(() => {
         if (user) {
@@ -16,8 +14,16 @@ const MyAppointments = () => {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
                 }
             })
-            .then(res => res.json())
-            .then(data => setAppointments(data));
+            .then(res => {
+                console.log('res: ', res);
+                if (res.status === 401 || res.status === 403) {
+                    // Go Home
+                }
+                return res.json()
+            })
+            .then(data => {
+                setAppointments(data)
+            });
         }
         
     }, [user])
