@@ -3,7 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 
 
-const liveApiRoot = "https://doctorarc-server-api.onrender.com/";
+const liveApiRoot = "https://doctorarc-server-api.onrender.com";
 
 const MyAppointments = () => {
     const [appointments, setAppointments] = useState([]);
