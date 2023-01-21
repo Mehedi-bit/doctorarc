@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { useState } from "react"
 
+const liveApiRoot = "https://doctorarc-server-api.onrender.com/";
+
 const useToken = user => {
     const [token, setToken] = useState('');
 
@@ -10,7 +12,7 @@ const useToken = user => {
         const currentUser = {email: email}
 
         if (email) {
-            fetch(`http://localhost:5000/user/${email}`, {
+            fetch(`${liveApiRoot}/user/${email}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'

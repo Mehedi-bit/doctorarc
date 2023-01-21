@@ -5,6 +5,8 @@ import Loading from '../Shared/Loading';
 import BookingModal from './BookingModal';
 import ServiceCard from './ServiceCard';
 
+const liveApiRoot = "https://doctorarc-server-api.onrender.com/";
+
 const AvailableAppointments = ({date}) => {
     // const [services, setServices] = useState([]);
     const [treatment, setTreatment] = useState(null);
@@ -12,7 +14,7 @@ const AvailableAppointments = ({date}) => {
     const formattedDate = format(date, 'PP');
 
     const { isLoading, error, data: services, refetch } = useQuery(['available', formattedDate], () => 
-        fetch(`http://localhost:5000/available?date=${formattedDate}`)
+        fetch(`${liveApiRoot}/available?date=${formattedDate}`)
         .then(res => res.json())
     )
 

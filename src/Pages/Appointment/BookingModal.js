@@ -5,6 +5,8 @@ import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
 
+const liveApiRoot = "https://doctorarc-server-api.onrender.com/";
+
 
 const BookingModal = ({date, treatment, setTreatment, refetch}) => {
     const {_id, name, slots} = treatment;
@@ -29,7 +31,7 @@ const BookingModal = ({date, treatment, setTreatment, refetch}) => {
             phone: event.target.phone.value
         }
 
-        fetch('http://localhost:5000/booking', {
+        fetch(`${liveApiRoot}/booking`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
