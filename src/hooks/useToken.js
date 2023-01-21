@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react"
 
-const liveApiRoot = "https://doctorarc-server-api.onrender.com/";
+const liveApiRoot = "https://doctorarc-server-api.onrender.com";
 
 const useToken = user => {
     const [token, setToken] = useState('');

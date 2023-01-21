@@ -5,7 +5,7 @@ import Loading from '../Shared/Loading';
 import BookingModal from './BookingModal';
 import ServiceCard from './ServiceCard';
 
-const liveApiRoot = "https://doctorarc-server-api.onrender.com/";
+const liveApiRoot = "https://doctorarc-server-api.onrender.com";
 
 const AvailableAppointments = ({date}) => {
     // const [services, setServices] = useState([]);

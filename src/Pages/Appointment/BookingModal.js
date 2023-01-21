@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
 
-const liveApiRoot = "https://doctorarc-server-api.onrender.com/";
+const liveApiRoot = "https://doctorarc-server-api.onrender.com";
 
 
 const BookingModal = ({date, treatment, setTreatment, refetch}) => {
